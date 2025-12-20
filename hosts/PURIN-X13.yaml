@@ -1,33 +1,37 @@
-# Host configuration for PURIN-X13
-# Personal Laptop
-# Bootstrapped from BlackDon's configuration
-
 host: PURIN-X13
 description: Personal Laptop
-
-# Import shared configurations (optional)
-# Example:
-# import:
-#   - hosts/shared/laptop-common.yaml
-
-# Enabled modules
+import: []
 enabled_modules: []
-
-# Host-specific packages
 packages: []
-
-# Exclude packages from base or modules
 exclude: []
-
-# Configuration backup settings
-config_backups:
-  enabled: true      # Auto-backup on sync
-  max_backups: 5     # Keep last 5 backups (0 = unlimited)
-
-# Settings
+additional_packages: []
+backup_tool: timeshift
+snapper_config: root
 flatpak_scope: user
 auto_prune: false
-backup_tool: timeshift
-
-# AUR helper (auto-detects paru or yay if not specified)
-aur_helper: yay # Options: paru, yay, or any compatible AUR helper
+config_backups:
+  enabled: true
+  max_backups: 5
+services:
+  enabled:
+  - NetworkManager
+  - NetworkManager-dispatcher
+  - ananicy
+  - avahi-daemon
+  - bluetooth
+  - containerd
+  - docker
+  - earlyoom
+  - firewalld
+  - getty@
+  - greetd
+  - iwd
+  - nvidia-powerd
+  - nvidia-resume
+  - nvidia-suspend
+  - power-profiles-daemon
+  - supergfxd
+  - upower
+  disabled: []
+editor: null
+aur_helper: yay
