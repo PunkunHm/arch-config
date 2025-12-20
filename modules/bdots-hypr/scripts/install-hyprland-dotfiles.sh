@@ -24,43 +24,43 @@ echo -e "${YELLOW}Note: Dotfiles are now managed via symlinks by dcli${NC}"
 echo ""
 
 # Apply GTK theme settings with gsettings
-echo -e "${BLUE}Applying GTK theme settings...${NC}"
+# echo -e "${BLUE}Applying GTK theme settings...${NC}"
 
 # Run gsettings as the target user
-apply_gsettings() {
-  if [ "$EUID" -eq 0 ]; then
-    sudo -u "$TARGET_USER" DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u $TARGET_USER)/bus" gsettings "$@" 2>/dev/null || true
-  else
-    gsettings "$@" 2>/dev/null || true
-  fi
-}
+# apply_gsettings() {
+#   if [ "$EUID" -eq 0 ]; then
+#     sudo -u "$TARGET_USER" DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u $TARGET_USER)/bus" gsettings "$@" 2>/dev/null || true
+#   else
+#     gsettings "$@" 2>/dev/null || true
+#   fi
+# }
 
 # Apply theme settings
-apply_gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-mocha-mauve-standard+default'
-apply_gsettings set org.gnome.desktop.interface icon-theme 'Tela-purple-dark'
-apply_gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
-apply_gsettings set org.gnome.desktop.interface font-name 'Inter Variable 10'
-apply_gsettings set org.gnome.desktop.interface cursor-size 24
+# apply_gsettings set org.gnome.desktop.interface gtk-theme 'catppuccin-mocha-mauve-standard+default'
+# apply_gsettings set org.gnome.desktop.interface icon-theme 'Tela-purple-dark'
+# apply_gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice'
+# apply_gsettings set org.gnome.desktop.interface font-name 'Inter Variable 10'
+# apply_gsettings set org.gnome.desktop.interface cursor-size 24
 
-echo -e "${GREEN}GTK theme settings applied via gsettings${NC}"
-echo ""
+# echo -e "${GREEN}GTK theme settings applied via gsettings${NC}"
+# echo ""
 
 # Create .gtkrc-2.0 for GTK2 applications
-echo -e "${BLUE}Creating GTK2 configuration...${NC}"
-cat > "${TARGET_HOME}/.gtkrc-2.0" << 'EOF'
-gtk-theme-name="catppuccin-mocha-mauve-standard+default"
-gtk-icon-theme-name="Tela-purple-dark"
-gtk-font-name="Inter Variable 10"
-gtk-cursor-theme-name="Bibata-Modern-Ice"
-gtk-cursor-theme-size=24
-EOF
+# echo -e "${BLUE}Creating GTK2 configuration...${NC}"
+# cat > "${TARGET_HOME}/.gtkrc-2.0" << 'EOF'
+# gtk-theme-name="catppuccin-mocha-mauve-standard+default"
+# gtk-icon-theme-name="Tela-purple-dark"
+# gtk-font-name="Inter Variable 10"
+# gtk-cursor-theme-name="Bibata-Modern-Ice"
+# gtk-cursor-theme-size=24
+# EOF
 
-if [ "$EUID" -eq 0 ]; then
-  chown "$TARGET_USER:$TARGET_USER" "${TARGET_HOME}/.gtkrc-2.0"
-fi
+# if [ "$EUID" -eq 0 ]; then
+#   chown "$TARGET_USER:$TARGET_USER" "${TARGET_HOME}/.gtkrc-2.0"
+# fi
 
-echo -e "${GREEN}GTK2 configuration created${NC}"
-echo ""
+# echo -e "${GREEN}GTK2 configuration created${NC}"
+# echo ""
 
 # Set default cursor theme
 echo -e "${BLUE}Setting default cursor theme...${NC}"
@@ -95,16 +95,18 @@ echo ""
 echo -e "${BLUE}Setting up wallpaper...${NC}"
 HYPR_CONFIG="${CONFIG_DIR}/hypr"
 WALLPAPER_DIR="${HYPR_CONFIG}/wallpapers"
-DEFAULT_WALLPAPER="${ARCH_CONFIG_DIR}/wallpapers/37.png"
+DEFAULT_WALLPAPER="${ARCH_CONFIG_DIR}/wallpapers/vera.png"
+LAPTOP_WALLPAPER="${ARCH_CONFIG_DIR}/wallpapers/16-10_vera.mp4"
+MONITOR_WALLPAPER="${ARCH_CONFIG_DIR}/wallpapers/16-9_vera.mp4"
 
 # Create wallpapers directory if it doesn't exist
 mkdir -p "$WALLPAPER_DIR"
 
 # Create symlink to default wallpaper if it exists
 if [ -f "$DEFAULT_WALLPAPER" ]; then
-  ln -sf "$DEFAULT_WALLPAPER" "${WALLPAPER_DIR}/wallpaper.png"
+  ln -sf "$DEFAULT_WALLPAPER" "${WALLPAPER_DIR}/static_wallpaper.png"
   if [ "$EUID" -eq 0 ]; then
-    chown -h "$TARGET_USER:$TARGET_USER" "${WALLPAPER_DIR}/wallpaper.png"
+    chown -h "$TARGET_USER:$TARGET_USER" "${WALLPAPER_DIR}/static_wallpaper.png"
     chown "$TARGET_USER:$TARGET_USER" "$WALLPAPER_DIR"
   fi
   echo -e "${GREEN}Wallpaper symlink created${NC}"
@@ -112,6 +114,28 @@ else
   echo -e "${YELLOW}Warning: Default wallpaper not found${NC}"
 fi
 echo ""
+
+# Create symlink for Laptop (16:10) video wallpaper
+if [ -f "$LAPTOP_WALLPAPER" ]; then
+  ln -sf "$LAPTOP_WALLPAPER" "${WALLPAPER_DIR}/laptop_wallpaper.mp4"
+  if [ "$EUID" -eq 0 ]; then
+    chown -h "$TARGET_USER:$TARGET_USER" "${WALLPAPER_DIR}/laptop_wallpaper.mp4"
+  fi
+  echo -e "${GREEN}Laptop video wallpaper symlink created${NC}"
+else
+  echo -e "${YELLOW}Warning: Laptop video wallpaper not found at $LAPTOP_WALLPAPER${NC}"
+fi
+
+# Create symlink for Monitor (16:9) video wallpaper
+if [ -f "$MONITOR_WALLPAPER" ]; then
+  ln -sf "$MONITOR_WALLPAPER" "${WALLPAPER_DIR}/monitor_wallpaper.mp4"
+  if [ "$EUID" -eq 0 ]; then
+    chown -h "$TARGET_USER:$TARGET_USER" "${WALLPAPER_DIR}/monitor_wallpaper.mp4"
+  fi
+  echo -e "${GREEN}Monitor video wallpaper symlink created${NC}"
+else
+  echo -e "${YELLOW}Warning: Monitor video wallpaper not found at $MONITOR_WALLPAPER${NC}"
+fi
 
 echo -e "${GREEN}Hyprland environment configuration complete!${NC}"
 echo ""
