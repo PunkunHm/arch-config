@@ -45,7 +45,11 @@ PanelWindow {
                 property bool isActive: Hyprland.focusedWorkspace?.id === (index + 1)
                 text: index + 1
                 color: isActive ? root.colCyan : (ws ? root.colBlue : root.colMuted)
-                font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+                font {
+                    family: root.fontFamily
+                    pixelSize: root.fontSize
+                    bold: true
+                }
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Hyprland.dispatch("workspace " + (index + 1))
@@ -53,31 +57,53 @@ PanelWindow {
             }
         }
 
-        Item { Layout.fillWidth: true }
+        Item {
+            Layout.fillWidth: true
+        }
 
         // CPU
         Text {
             text: "CPU: " + cpuUsage + "%"
             color: root.colYellow
-            font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+            font {
+                family: root.fontFamily
+                pixelSize: root.fontSize
+                bold: true
+            }
         }
 
-        Rectangle { width: 1; height: 16; color: root.colMuted }
+        Rectangle {
+            width: 1
+            height: 16
+            color: root.colMuted
+        }
 
         // Memory
         Text {
             text: "Mem: " + memUsage + "%"
             color: root.colCyan
-            font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+            font {
+                family: root.fontFamily
+                pixelSize: root.fontSize
+                bold: true
+            }
         }
 
-        Rectangle { width: 1; height: 16; color: root.colMuted }
+        Rectangle {
+            width: 1
+            height: 16
+            color: root.colMuted
+        }
 
         // Clock
         Text {
             id: clock
             color: root.colBlue
-            font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+            font {
+                family: root.fontFamily
+                pixelSize: root.fontSize
+                bold: true
+            }
             text: Qt.formatDateTime(new Date(), "ddd, MMM dd - HH:mm")
             Timer {
                 interval: 1000
