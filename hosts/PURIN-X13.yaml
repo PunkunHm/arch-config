@@ -28,3 +28,6 @@ config_backups:
 flatpak_scope: user
 auto_prune: false
 backup_tool: timeshift
+
+# AUR helper (auto-detects paru or yay if not specified)
+aur_helper: yay # Options: paru, yay, or any compatible AUR helper
