@@ -8,8 +8,6 @@ packages:
   - base-devel
   - linux-firmware
   - networkmanager
-  - vim
   - git
-  - htop
   - man-db
   - man-pages
