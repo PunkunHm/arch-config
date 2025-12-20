@@ -5,7 +5,7 @@
 description: Hyprland Wayland compositor
 
 packages:
-  - quickshell # DMS dependency
+  - quickshell-git # DMS dependency
 
 # Conflicts with other window managers
 conflicts: []
