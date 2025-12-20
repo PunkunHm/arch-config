@@ -1,4 +1,21 @@
-last_updated: 2025-12-18T21:25:13.118306136Z
+last_updated: 2025-12-20T11:15:11.908993472Z
 enabled_services:
-
+- NetworkManager
+- NetworkManager-dispatcher
+- ananicy
+- avahi-daemon
+- bluetooth
+- containerd
+- docker
+- earlyoom
+- firewalld
+- getty@
+- greetd
+- iwd
+- nvidia-powerd
+- nvidia-resume
+- nvidia-suspend
+- power-profiles-daemon
+- supergfxd
+- upower
 disabled_services: []
