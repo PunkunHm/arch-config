@@ -21,10 +21,13 @@ exclude: []
 
 # Configuration backup settings
 config_backups:
-  enabled: true      # Auto-backup on sync
-  max_backups: 5     # Keep last 5 backups (0 = unlimited)
+  enabled: true # Auto-backup on sync
+  max_backups: 5 # Keep last 5 backups (0 = unlimited)
 
 # Settings
 flatpak_scope: user
 auto_prune: false
 backup_tool: timeshift
+
+# AUR helper (auto-detects paru or yay if not specified)
+aur_helper: yay # Options: paru, yay, or any compatible AUR helper
