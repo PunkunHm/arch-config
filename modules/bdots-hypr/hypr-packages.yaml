@@ -12,7 +12,7 @@ packages:
   - grim # Screenshot tool
   - slurp # Region selector
   - hyprshot # Temporary solution
-  - nwg-displays # Display configuration
+  - hyprdynamicmonitors-bin # Display configuration
   - brightnessctl # Brightness control
   - pavucontrol # Audio control
 
