@@ -1,7 +1,8 @@
 host: PURIN-X13
 description: Personal Laptop
 import: []
-enabled_modules: []
+enabled_modules:
+  - bdots-hypr
 packages: []
 exclude: []
 additional_packages: []
@@ -14,24 +15,24 @@ config_backups:
   max_backups: 5
 services:
   enabled:
-  - NetworkManager
-  - NetworkManager-dispatcher
-  - ananicy
-  - avahi-daemon
-  - bluetooth
-  - containerd
-  - docker
-  - earlyoom
-  - firewalld
-  - getty@
-  - greetd
-  - iwd
-  - nvidia-powerd
-  - nvidia-resume
-  - nvidia-suspend
-  - power-profiles-daemon
-  - supergfxd
-  - upower
+    - NetworkManager
+    - NetworkManager-dispatcher
+    - ananicy
+    - avahi-daemon
+    - bluetooth
+    - containerd
+    - docker
+    - earlyoom
+    - firewalld
+    - getty@
+    - greetd
+    - iwd
+    - nvidia-powerd
+    - nvidia-resume
+    - nvidia-suspend
+    - power-profiles-daemon
+    - supergfxd
+    - upower
   disabled: []
 editor: null
 aur_helper: yay
