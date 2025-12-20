@@ -1,0 +1,26 @@
+[Unit]
+Description=HyperHDR Ambient Light System
+# This waits for the Wayland display manager session to be active
+After=wayland-display.target graphical-session.target
+
+[Service]
+Type=simple
+
+# Forcing HyperHDR to only see this monitor
+Environment=XDPW_OUTPUT_NAME=HDMI-A-2
+# This tells the portal to bypass the menu/picker for this specific request
+Environment=XDPW_CHOOSER_TYPE=none
+
+# Required standard Wayland vars
+Environment=WAYLAND_DISPLAY=wayland-0
+Environment=XDG_CURRENT_DESKTOP=Hyprland
+
+# 1. Check for monitor. If not found, service exits immediately with "failure"
+ExecStartPre=/bin/sh -c 'hyprctl monitors | grep -q "HDMI-A-2"'
+# 2. Start the app
+ExecStart=/usr/share/hyperhdr/bin/hyperhdr
+# 3. DO NOT RESTART. If it fails or monitor is missing, it stays dead.
+Restart=no
+
+[Install]
+WantedBy=graphical-session.target

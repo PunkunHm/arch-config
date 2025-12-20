@@ -1,0 +1,11 @@
+[Unit]
+Description=Lock the screen using hyprlock
+Before=hyprlock.service
+
+[Service]
+ExecStart=/usr/bin/hyprlock
+User=%i
+Type=oneshot
+
+[Install]
+WantedBy=default.target
