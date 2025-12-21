@@ -170,7 +170,6 @@ packages:
 - welcome
 - wget
 - which
-- winboat
 - wireplumber
 - woeusb
 - xdg-desktop-portal-gtk
