@@ -1,0 +1,18 @@
+description: "Main Module to source other yaml files for _kde-dots"
+
+# Optional: Modules that conflict with this one
+conflicts:
+  - _undersea-dots
+  - _mango-dots
+
+# Optional: Post-install hook script (relative to module directory)
+post_install_hook: []
+hooks_behavior: [] # or "always", "skip", "once" (default)
+
+# Optional: Explicit list of package files to load (empty = auto-discover)
+package_files:
+  - quickshells.yaml
+  - hypr-packages.yaml
+  - hypr-themes.yaml
+  - dependencies.yaml
+  - default-apps.yaml
