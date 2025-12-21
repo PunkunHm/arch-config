@@ -2,7 +2,7 @@ host: PURIN-X13
 description: Personal Laptop
 import: []
 enabled_modules:
-  - bdots-hypr
+  - _undersea-dots
 packages: []
 exclude: []
 additional_packages: []
