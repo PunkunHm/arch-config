@@ -7,7 +7,6 @@ packages:
 - alsa-utils
 - amd-ucode
 - aspell
-- asusctl
 - b43-fwcutter
 - bash-completion
 - bind
@@ -139,7 +138,6 @@ packages:
 - reflector
 - reflector-simple
 - rofi
-- rog-control-center
 - rsync
 - rtkit
 - s-nail
@@ -152,7 +150,6 @@ packages:
 - spotify-launcher
 - steam
 - sudo
-- supergfxctl
 - sysfsutils
 - systemd-sysvcompat
 - texinfo

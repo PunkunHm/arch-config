@@ -8,6 +8,11 @@ packages:
   - cpio # Archiving tool
   - git # Version control
   - gcc # C and C++ compilers
+  - cmake
+  - meson
+  - pkg-config
+  - g++
+  - gcc
 
 # Conflicts with other window managers
 conflicts: []
