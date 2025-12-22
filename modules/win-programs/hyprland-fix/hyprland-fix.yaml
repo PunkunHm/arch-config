@@ -1,0 +1,16 @@
+# Example module template
+# Copy this to create new modules, or delete it
+
+description: Packages required for specific hyprland fix
+
+# List of packages in this module
+packages:
+  - plasma-workspace
+  - kdbusaddons
+  - kcrash
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: ""

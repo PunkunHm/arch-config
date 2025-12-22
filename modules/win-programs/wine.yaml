@@ -1,0 +1,17 @@
+# Example module template
+# Copy this to create new modules, or delete it
+
+description: Packages required for windows programs like CSP 3.0+ and more
+
+# List of packages in this module
+packages:
+  - wine-staging
+  - wine-gecko
+  - wine-mono
+  - winetricks
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: ""
