@@ -4,6 +4,10 @@ import: []
 enabled_modules:
   - _undersea-dots
   - asus
+  - win-programs
+  - win-programs/hyprland-fix
+  - gaming
+  - gaming/controller-support
 packages: []
 exclude: []
 additional_packages: []
