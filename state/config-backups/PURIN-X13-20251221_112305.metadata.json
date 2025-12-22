@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-12-21T11:23:05.618733559+00:00",
+  "timestamp_display": "2025-12-21 11:23",
+  "hostname": "PURIN-X13",
+  "active_host_file": "PURIN-X13.yaml",
+  "enabled_modules": [
+    "_undersea-dots",
+    "asus",
+    "win-programs"
+  ],
+  "backup_type": "auto-sync",
+  "dcli_version": "0.1.0",
+  "package_count": 223,
+  "validation_passed": true
+}
