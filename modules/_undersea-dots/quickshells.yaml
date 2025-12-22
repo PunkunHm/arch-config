@@ -6,6 +6,7 @@ description: Hyprland Wayland compositor
 
 packages:
   - quickshell-git # DMS dependency
+  - noctalia-shell # temporary shell
 
 # Conflicts with other window managers
 conflicts: []
