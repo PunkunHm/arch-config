@@ -8,7 +8,7 @@ packages:
   - gamescope # Gaming compositor
   - mangohud # Performance overlay
   - gamemode # Optimize system for gaming
-  - protonup-qt # Proton version manager
+  - flatpak:net.davidotek.pupgui2 # Proton version manager
   - sunshine # Remote Gaming
 
 conflicts: []
