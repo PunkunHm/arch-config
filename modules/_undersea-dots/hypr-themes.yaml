@@ -10,5 +10,6 @@ packages:
   - gtk3 # GTK 3 libraries
   - gtk4 # GTK 4 libraries
   - bibata-cursor-theme-bin # Bibata Modern Ice cursor theme
+  - ttf-jetbrains-mono-nerd
 # Conflicts with other window managers
 conflicts: []
