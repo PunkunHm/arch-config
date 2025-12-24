@@ -10,31 +10,31 @@ packages:
 
   # File managers
   - nemo # Cinnamon file manager
-  - thunar # XFCE file manager
+  #  - thunar # XFCE file manager
 
   # Clipboard utilities
   - wl-clipboard # Wayland clipboard utilities
   - cliphist # Clipboard history manager
 
   # Theming
-  - python-pywal # Color scheme generator
+  #  - python-pywal # Color scheme generator
 
   # Messaging
-  - telegram-desktop # Telegram messaging client
-  - vesktop # Discord client
-  - discord # Discord client
+  - vesktop-git # Discord client
 
   # Virtualization
-  - virt-manager # Virtual machine manager
+  #  - virt-manager # Virtual machine manager
 
   # Media
   - obs-studio # OBS Studio for streaming/recording
 
   # Web browsers
+  - webapp-manager
   - zen-browser-bin # Zen browser (AUR)
+  # - firefox # for webapp-manager
 
   # Productivity
-  - obsidian # Obsidian notes app (AUR)
+  #  - obsidian # Obsidian notes app (AUR)
 
   # Development
   - zed # Zed code editor (AUR)
