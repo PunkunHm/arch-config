@@ -10,7 +10,7 @@ packages:
   - gcc # C and C++ compilers
   - cmake
   - meson
-  - pkg-config
+  - pkgconfig
 
 # Conflicts with other window managers
 conflicts: []

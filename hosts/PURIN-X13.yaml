@@ -8,6 +8,7 @@ enabled_modules:
   - win-programs/hyprland-fix
   - gaming
   - gaming/controller-support
+  - package-mods/main-apps
 packages: []
 exclude: []
 additional_packages: []
