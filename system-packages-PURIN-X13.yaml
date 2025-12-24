@@ -41,12 +41,12 @@ packages:
 - eos-quickstart
 - eos-rankmirrors
 - ethtool
+- evtest
 - exfatprogs
 - f2fs-tools
 - ffmpegthumbnailer
 - firewalld
 - flatpak
-- gamescope
 - greetd
 - grub
 - gst-libav
@@ -67,6 +67,7 @@ packages:
 - jfsutils
 - kvantum
 - less
+- lib32-gamemode
 - libdvdcss
 - libgsf
 - libopenraw
@@ -105,7 +106,6 @@ packages:
 - nvidia-laptop-power-cfg
 - nvidia-settings
 - nvidia-utils
-- obs-studio
 - openssh
 - opentabletdriver
 - os-prober
@@ -145,10 +145,10 @@ packages:
 - sg3_utils
 - smartmontools
 - sof-firmware
+- songrec
 - spicetify-cli
 - spicetify-themes-git
 - spotify-launcher
-- steam
 - sudo
 - sysfsutils
 - systemd-sysvcompat
@@ -166,7 +166,6 @@ packages:
 - usb_modeswitch
 - usbutils
 - uwsm
-- vesktop-git
 - welcome
 - wget
 - which
