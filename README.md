@@ -1,4 +1,4 @@
-# undersea-dots
+# arch-config
 My personal workspace setup for EndeavourOS + Hyprland.
 
 # arch-config - Don's Personal Configuration
