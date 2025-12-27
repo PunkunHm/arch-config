@@ -1,0 +1,13 @@
+
+KERNEL=="uinput", SUBSYSTEM=="misc", OPTIONS+="static_node=uinput", TAG+="uaccess", TAG+="udev-acl"
+KERNEL=="js[0-9]*", SUBSYSTEM=="input", ATTRS{name}=="OpenTabletDriver Virtual Tablet", RUN+="/usr/bin/env rm %E{DEVNAME}"
+
+# Xencelabs Medium Wireless Mode: 5203
+KERNEL=="hidraw*", ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="5203", TAG+="uaccess", TAG+="udev-acl"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="5203", TAG+="uaccess", TAG+="udev-acl"
+SUBSYSTEM=="input", ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="5203", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+
+# Xencelabs Medium Wired Mode: 5201
+KERNEL=="hidraw*", ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="5201", TAG+="uaccess", TAG+="udev-acl"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="5201", TAG+="uaccess", TAG+="udev-acl"
+SUBSYSTEM=="input", ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="5201", ENV{LIBINPUT_IGNORE_DEVICE}="1"
