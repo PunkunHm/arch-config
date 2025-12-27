@@ -5,9 +5,9 @@ description: Packages required for specific hyprland fix
 
 # List of packages in this module
 packages:
-  - plasma-workspace
-  - kdbusaddons
-  - kcrash
+#  - plasma-workspace
+#  - kdbusaddons
+#  - kcrash
 
 # Modules that conflict with this one
 conflicts: []
