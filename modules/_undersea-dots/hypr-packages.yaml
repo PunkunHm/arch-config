@@ -15,6 +15,7 @@ packages:
   - hyprdynamicmonitors-bin # Display configuration
   - brightnessctl # Brightness control
   - pavucontrol # Audio control
+  - udiskie # Auto mount drives
 
 # Conflicts with other window managers
 conflicts: []
