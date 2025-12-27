@@ -1,0 +1,31 @@
+{
+  "Name": "XenceLabs Pen Tablet Medium Wireless",
+  "Specifications": {
+    "Digitizer": {
+      "Width": 261.62,
+      "Height": 148,
+      "MaxX": 52324,
+      "MaxY": 29600
+    },
+    "Pen": {
+      "MaxPressure": 8191,
+      "ButtonCount": 3
+    },
+    "AuxiliaryButtons": {
+      "ButtonCount": 3
+    }
+  },
+  "DigitizerIdentifiers": [
+    {
+      "VendorID": 10429,
+      "ProductID": 20995,
+      "InputReportLength": 32,
+      "OutputReportLength": 32,
+      "ReportParser": "OpenTabletDriver.Configurations.Parsers.XenceLabs.XenceLabsReportParser",
+      "OutputInitReport": ["ArAEAAAAAAAAAEND23bH1AAAAAAAAAAAAAAAAAAAAAA="]
+    }
+  ],
+  "Attributes": {
+    "libinputoverride": "1"
+  }
+}
