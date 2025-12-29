@@ -1,189 +1,194 @@
 description: Packages installed manually on the system (auto-synced by dcli)
 packages:
-- HyperHDR
-- accountsservice
-- alsa-firmware
-- alsa-plugins
-- alsa-utils
-- amd-ucode
-- aspell
-- b43-fwcutter
-- bash-completion
-- bind
-- blueman
-- bluez
-- bluez-utils
-- btop
-- btrfs-progs
-- cantarell-fonts
-- cryptsetup
-- device-mapper
-- diffutils
-- discord-ptb
-- dmidecode
-- dnsmasq
-- dosfstools
-- downgrade
-- dracut
-- duf
-- e2fsprogs
-- earlyoom
-- efibootmgr
-- efitools
-- endeavouros-branding
-- endeavouros-keyring
-- endeavouros-mirrorlist
-- eos-apps-info
-- eos-dracut
-- eos-hooks
-- eos-log-tool
-- eos-packagelist
-- eos-quickstart
-- eos-rankmirrors
-- ethtool
-- evtest
-- exfatprogs
-- f2fs-tools
-- ffmpegthumbnailer
-- firewalld
-- flatpak
-- greetd
-- grub
-- gst-libav
-- gst-plugin-pipewire
-- gst-plugins-bad
-- gst-plugins-ugly
-- haveged
-- hdparm
-- hwdetect
-- hwinfo
-- hypridle
-- hyprlock
-- hyprsunset
-- inetutils
-- inxi
-- iptables-nft
-- iwd
-- jfsutils
-- kvantum
-- less
-- lib32-gamemode
-- libdvdcss
-- libgsf
-- libopenraw
-- libwnck3
-- linux
-- linux-g14
-- linux-g14-headers
-- linux-headers
-- logrotate
-- lsb-release
-- lsscsi
-- lvm2
-- mdadm
-- meld
-- mesa-utils
-- minq-ananicy-git
-- mkinitcpio
-- modemmanager
-- mpvpaper-stop-git
-- mtools
-- nano
-- nano-syntax-highlighting
-- networkmanager-openconnect
-- networkmanager-openvpn
-- nfs-utils
-- nilfs-utils
-- noto-fonts
-- noto-fonts-cjk
-- noto-fonts-emoji
-- noto-fonts-extra
-- nss-mdns
-- ntfs-3g
-- ntp
-- nvidia-hook
-- nvidia-inst
-- nvidia-laptop-power-cfg
-- nvidia-settings
-- nvidia-utils
-- openssh
-- opentabletdriver
-- os-prober
-- pacman-contrib
-- pamixer
-- partitionmanager
-- perl
-- pipewire-alsa
-- pipewire-jack
-- pipewire-pulse
-- pkgfile
-- playerctl
-- plocate
-- polkit-gnome
-- poppler-glib
-- power-profiles-daemon
-- pv
-- python
-- python-defusedxml
-- python-jinja
-- python-packaging
-- python-pyqt6
-- qt5ct
-- qt6-multimedia
-- qt6-multimedia-ffmpeg
-- qt6ct
-- rclone
-- rclone-mount-service
-- rebuild-detector
-- reflector
-- reflector-simple
-- rofi
-- rsync
-- rtkit
-- s-nail
-- sbctl
-- sg3_utils
-- smartmontools
-- sof-firmware
-- songrec
-- spicetify-cli
-- spicetify-themes-git
-- spotify-launcher
-- sudo
-- sysfsutils
-- systemd-sysvcompat
-- texinfo
-- timeshift
-- timeshift-systemd-timer
-- tldr
-- ttf-bitstream-vera
-- ttf-dejavu
-- ttf-liberation
-- ttf-opensans
-- unrar
-- unzip
-- upower
-- usb_modeswitch
-- usbutils
-- uwsm
-- welcome
-- wget
-- which
-- wireplumber
-- woeusb
-- xdg-desktop-portal-gtk
-- xdg-user-dirs
-- xdg-utils
-- xf86-input-libinput
-- xf86-video-amdgpu
-- xfsprogs
-- xl2tpd
-- xorg-server
-- xorg-xdpyinfo
-- xorg-xinput
-- xorg-xrandr
-- yay
-- zram-generator
+  - HyperHDR
+  - accountsservice
+  - alsa-firmware
+  - alsa-plugins
+  - alsa-utils
+  - amd-ucode
+  - aspell
+  - b43-fwcutter
+  - bash-completion
+  - bind
+  - blueman
+  - bluez
+  - bluez-utils
+  - btop
+  - btrfs-progs
+  - cantarell-fonts
+  - cryptsetup
+  - device-mapper
+  - diffutils
+  - discord-ptb
+  - dmidecode
+  - dnsmasq
+  - dosfstools
+  - downgrade
+  - dracut
+  - duf
+  - e2fsprogs
+  - earlyoom
+  - efibootmgr
+  - efitools
+  - endeavouros-branding
+  - endeavouros-keyring
+  - endeavouros-mirrorlist
+  - eos-apps-info
+  - eos-dracut
+  - eos-hooks
+  - eos-log-tool
+  - eos-packagelist
+  - eos-quickstart
+  - eos-rankmirrors
+  - ethtool
+  - evtest
+  - exfatprogs
+  - f2fs-tools
+  - ffmpegthumbnailer
+  - firejail
+  - firewalld
+  - flatpak
+  - git-filter-repo
+  - greetd
+  - grub
+  - gst-libav
+  - gst-plugin-pipewire
+  - gst-plugins-bad
+  - gst-plugins-ugly
+  - haveged
+  - hdparm
+  - hwdetect
+  - hwinfo
+  - hypridle
+  - hyprlock
+  - hyprsunset
+  - inetutils
+  - inxi
+  - iptables-nft
+  - iwd
+  - jfsutils
+  - kvantum
+  - less
+  - lib32-gamemode
+  - libdvdcss
+  - libgsf
+  - libopenraw
+  - libwnck3
+  - linux
+  - linux-g14
+  - linux-g14-headers
+  - linux-headers
+  - logrotate
+  - lsb-release
+  - lsscsi
+  - lvm2
+  - mdadm
+  - meld
+  - mesa-utils
+  - minq-ananicy-git
+  - mkinitcpio
+  - modemmanager
+  - mpvpaper-stop-git
+  - mtools
+  - nano
+  - nano-syntax-highlighting
+  - nemo-compare
+  - nemo-fileroller
+  - nemo-preview
+  - networkmanager-openconnect
+  - networkmanager-openvpn
+  - nfs-utils
+  - nilfs-utils
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - noto-fonts-extra
+  - nss-mdns
+  - ntfs-3g
+  - ntp
+  - nvidia-hook
+  - nvidia-inst
+  - nvidia-laptop-power-cfg
+  - nvidia-settings
+  - nvidia-utils
+  - openssh
+  - opentabletdriver
+  - os-prober
+  - pacman-contrib
+  - pamixer
+  - partitionmanager
+  - perl
+  - pipewire-alsa
+  - pipewire-jack
+  - pipewire-pulse
+  - pkgfile
+  - playerctl
+  - plocate
+  - polkit-gnome
+  - poppler-glib
+  - power-profiles-daemon
+  - pv
+  - python
+  - python-defusedxml
+  - python-jinja
+  - python-packaging
+  - python-pyqt6
+  - qt5ct
+  - qt6-multimedia
+  - qt6-multimedia-ffmpeg
+  - qt6ct
+  - rclone
+  - rclone-mount-service
+  - rebuild-detector
+  - reflector
+  - reflector-simple
+  - rofi
+  - rsync
+  - rtkit
+  - s-nail
+  - sbctl
+  - sg3_utils
+  - smartmontools
+  - sof-firmware
+  - songrec
+  - spicetify-cli
+  - spicetify-themes-git
+  - spotify-launcher
+  - sudo
+  - sysfsutils
+  - systemd-sysvcompat
+  - texinfo
+  - timeshift
+  - timeshift-systemd-timer
+  - tldr
+  - ttf-bitstream-vera
+  - ttf-dejavu
+  - ttf-liberation
+  - ttf-opensans
+  - unrar
+  - unzip
+  - upower
+  - usb_modeswitch
+  - usbutils
+  - uwsm
+  - welcome
+  - wget
+  - which
+  - wireplumber
+  - woeusb
+  - xdg-desktop-portal-gtk
+  - xdg-user-dirs
+  - xdg-utils
+  - xf86-input-libinput
+  - xf86-video-amdgpu
+  - xfsprogs
+  - xl2tpd
+  - xorg-server
+  - xorg-xdpyinfo
+  - xorg-xinput
+  - xorg-xrandr
+  - yay
+  - zram-generator
 exclude: []
 conflicts: []
 pre_install_hook: null
