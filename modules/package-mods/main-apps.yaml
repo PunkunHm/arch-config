@@ -20,7 +20,8 @@ packages:
   #  - python-pywal # Color scheme generator
 
   # Messaging
-  - vesktop-git # Discord client
+  # - vesktop # Discord client
+  - discord
 
   # Virtualization
   #  - virt-manager # Virtual machine manager

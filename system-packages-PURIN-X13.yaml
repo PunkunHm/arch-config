@@ -69,6 +69,8 @@ packages:
   - libdvdcss
   - libgsf
   - libopenraw
+  - libva-nvidia-driver
+  - libva-utils
   - libwnck3
   - linux
   - linux-g14
@@ -127,6 +129,7 @@ packages:
   - python-defusedxml
   - python-jinja
   - python-packaging
+  - python-pip
   - python-pyqt6
   - qt5ct
   - qt6-multimedia
