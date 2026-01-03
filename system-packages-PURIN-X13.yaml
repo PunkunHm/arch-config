@@ -51,10 +51,6 @@ packages:
   - git-filter-repo
   - greetd
   - grub
-  - gst-libav
-  - gst-plugin-pipewire
-  - gst-plugins-bad
-  - gst-plugins-ugly
   - haveged
   - hdparm
   - hwdetect
@@ -88,7 +84,6 @@ packages:
   - minq-ananicy-git
   - mkinitcpio
   - modemmanager
-  - mpvpaper-stop-git
   - mtools
   - nano
   - nano-syntax-highlighting

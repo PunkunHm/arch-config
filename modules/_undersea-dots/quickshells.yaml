@@ -7,6 +7,13 @@ description: Hyprland Wayland compositor
 packages:
   - quickshell-git # DMS dependency
   - noctalia-shell # temporary shell
+  - mpvpaper # Wallpaper utility
+  - mpvpaper-stop-git
+  - gst-libav
+  - gst-plugin-pipewire
+  - gst-plugins-bad
+  - gst-plugins-good
+  - gst-plugins-ugly
 
 # Conflicts with other window managers
 conflicts: []

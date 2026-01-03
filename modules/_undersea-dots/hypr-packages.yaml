@@ -6,7 +6,6 @@ description: Hyprland Wayland compositor with DankMaterialShell
 
 packages:
   - hyprland # Main compositor
-  - mpvpaper # Wallpaper utility
   - xdg-desktop-portal-hyprland # Desktop portal
   - wl-clipboard # Clipboard utilities
   - grim # Screenshot tool
