@@ -1,0 +1,14 @@
+# Example module template
+# Copy this to create new modules, or delete it
+
+description: Essential/must-have packages for digital art
+
+# List of packages in this module
+packages:
+  - uxplay-git
+
+# Modules that conflict with this one
+conflicts: []
+
+# Script to run after installing packages (optional)
+post_install_hook: ""
