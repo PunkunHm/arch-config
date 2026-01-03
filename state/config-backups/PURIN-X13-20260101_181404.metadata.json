@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-01-01T18:14:04.104331926+00:00",
+  "timestamp_display": "2026-01-01 18:14",
+  "hostname": "PURIN-X13",
+  "active_host_file": "PURIN-X13.yaml",
+  "enabled_modules": [
+    "_undersea-dots",
+    "asus",
+    "win-programs",
+    "win-programs/hyprland-fix",
+    "gaming",
+    "gaming/controller-support",
+    "package-mods/main-apps"
+  ],
+  "backup_type": "auto-sync",
+  "dcli_version": "0.1.0",
+  "package_count": 59,
+  "validation_passed": true
+}
