@@ -5,11 +5,13 @@ description: Gaming packages and tools for Linux gaming
 
 packages:
   - steam # Steam gaming platform
-  - gamescope # Gaming compositor
+  - name: com.heroicgameslauncher.hgl # Heroic Games launcher
+    type: flatpak
+  - gamescope-git # Gaming compositor
   - mangohud # Performance overlay
   - gamemode # Optimize system for gaming
-  - flatpak:net.davidotek.pupgui2 # Proton version manager
-  - sunshine # Remote Gaming
+  - name: com.vysp3r.ProtonPlus # Proton version manager
+    type: flatpak
 
 conflicts: []
 post_install_hook: ""

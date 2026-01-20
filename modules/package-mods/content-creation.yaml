@@ -5,11 +5,12 @@ description: Content Creation Packages
 
 # List of packages in this module
 packages:
-  - lightworks
-  - flatpak:com.obsproject.Studio
-  - flatpak:com.obsproject.Studio.Plugin.AitumMultistream
-  - flatpak:com.obsproject.Studio.Plugin.VerticalCanvas
-
+  # - lightworks # replace with davinci resolve
+  - name: com.obsproject.Studio
+    type: flatpak
+  # - flatpak:com.obsproject.Studio.Plugin.AitumMultistream
+  - name: com.obsproject.Studio.Plugin.CompositeBlur
+    type: flatpak
 # Modules that conflict with this one
 conflicts: []
 
