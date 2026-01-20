@@ -10,24 +10,14 @@ packages:
 
   # File managers
   - nemo # Cinnamon file manager
-  #  - thunar # XFCE file manager
 
   # Clipboard utilities
   - wl-clipboard # Wayland clipboard utilities
   - cliphist # Clipboard history manager
 
-  # Theming
-  #  - python-pywal # Color scheme generator
-
   # Messaging
   # - vesktop # Discord client
   - discord
-
-  # Virtualization
-  #  - virt-manager # Virtual machine manager
-
-  # Media
-  - obs-studio # OBS Studio for streaming/recording
 
   # Web browsers
   - webapp-manager
