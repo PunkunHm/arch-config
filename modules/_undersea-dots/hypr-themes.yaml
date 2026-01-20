@@ -5,10 +5,13 @@
 description: Hyprland Wayland compositor with DankMaterialShell
 
 packages:
+  - nwg-look
   - qt5-wayland # Qt5 Wayland support
   - qt6-wayland # Qt6 Wayland support
   - gtk3 # GTK 3 libraries
   - gtk4 # GTK 4 libraries
+  - qt5-base
+  - qt6-base
   - bibata-cursor-theme-bin # Bibata Modern Ice cursor theme
   - ttf-jetbrains-mono-nerd
 # Conflicts with other window managers
