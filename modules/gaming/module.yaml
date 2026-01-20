@@ -5,7 +5,7 @@ conflicts:
 
 # Optional: Post-install hook script (relative to module directory)
 post_install_hook:
-hooks_behavior: [] # or "always", "skip", "once" (default)
+hooks_behavior: # or "always", "skip", "once" (default)
 
 # Optional: Explicit list of package files to load (empty = auto-discover)
 package_files:
