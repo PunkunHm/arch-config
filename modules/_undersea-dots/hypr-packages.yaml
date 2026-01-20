@@ -1,8 +1,8 @@
 # Hyprland Wayland compositor
 # Dynamic tiling Wayland compositor with smooth animations
-# Uses DankMaterialShell (DMS) for bar, notifications, launcher, and lock screen
+# XXX Uses DankMaterialShell (DMS) for bar, notifications, launcher, and lock screen
 
-description: Hyprland Wayland compositor with DankMaterialShell
+description: Hyprland Wayland compositor
 
 packages:
   - hyprland # Main compositor
@@ -15,6 +15,8 @@ packages:
   - brightnessctl # Brightness control
   - pavucontrol # Audio control
   - udiskie # Auto mount drives
+  - xorg-xrdb
+  - pacman-contrib
 
 # Conflicts with other window managers
 conflicts: []
