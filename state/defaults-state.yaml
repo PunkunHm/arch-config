@@ -1,0 +1,9 @@
+last_updated: 2026-01-20T11:44:08.121091544Z
+scope: system
+apps:
+  text_editor: dev.zed.Zed
+  pdf_viewer: xreader
+  file_manager: nemo
+  audio_player: com.github.marinm.songrec
+  browser: zen
+custom_mime_types: {}
