@@ -1,4 +1,4 @@
-last_updated: 2026-01-01T18:14:58.446018027Z
+last_updated: 2026-01-20T11:44:08.120487475Z
 enabled_services:
 - NetworkManager
 - NetworkManager-dispatcher
@@ -15,7 +15,9 @@ enabled_services:
 - nvidia-powerd
 - nvidia-resume
 - nvidia-suspend
+- plugin_loader
 - power-profiles-daemon
 - supergfxd
+- tailscaled
 - upower
 disabled_services: []
