@@ -16,10 +16,11 @@ packages:
   - btop
   - btrfs-progs
   - cantarell-fonts
+  - name: com.hypixel.HytaleLauncher
+    type: flatpak
   - cryptsetup
   - device-mapper
   - diffutils
-  - discord-ptb
   - dmidecode
   - dnsmasq
   - dosfstools
@@ -110,8 +111,19 @@ packages:
   - nvidia-utils
   - openssh
   - opentabletdriver
+  - name: org.freedesktop.Platform.GL.default
+    type: flatpak
+  - name: org.freedesktop.Platform.GL.default
+    type: flatpak
+  - name: org.freedesktop.Platform.GL.nvidia-590-48-01
+    type: flatpak
+  - name: org.freedesktop.Platform.openh264
+    type: flatpak
+  - name: org.gtk.Gtk3theme.adw-gtk3-dark
+    type: flatpak
+  - name: org.kde.Platform
+    type: flatpak
   - os-prober
-  - pacman-contrib
   - pamixer
   - partitionmanager
   - perl
@@ -125,16 +137,15 @@ packages:
   - poppler-glib
   - power-profiles-daemon
   - pv
+  - pyside6
   - python
   - python-defusedxml
   - python-jinja
   - python-packaging
   - python-pip
   - python-pyqt6
-  - qt5ct
   - qt6-multimedia
   - qt6-multimedia-ffmpeg
-  - qt6ct
   - rclone
   - rclone-mount-service
   - rebuild-detector
@@ -170,6 +181,7 @@ packages:
   - usbutils
   - uwsm
   - welcome
+  - wev
   - wget
   - which
   - wireplumber

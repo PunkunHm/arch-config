@@ -1,0 +1,8 @@
+description: "Game controller drivers and tools for various gaming controllers"
+
+conflicts:
+
+post_install_hook: # Apply CSP bottle backup and Xencelab Wireless profile backup
+
+package_files:
+  - essentials.yaml
