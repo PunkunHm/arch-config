@@ -1,0 +1,29 @@
+description: Packages installed manually on the system (auto-synced by dcli)
+packages:
+  - base
+  - base-devel
+  - bibata-cursor-theme-bin
+  - discord
+  - flatpak
+  - gst-libav
+  - gst-plugin-pipewire
+  - gst-plugins-bad
+  - gst-plugins-good
+  - gst-plugins-ugly
+  - linux-firmware
+  - man-db
+  - man-pages
+  - networkmanager
+  - name: org.freedesktop.Platform.Compat.i386
+    type: flatpak
+  - name: org.freedesktop.Platform.GL32.default
+    type: flatpak
+  - name: org.freedesktop.Platform.GL32.nvidia-590-48-01
+    type: flatpak
+exclude: []
+conflicts: []
+pre_install_hook: null
+post_install_hook: null
+hook_behavior: ask
+pre_hook_behavior: null
+post_hook_behavior: null

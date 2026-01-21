@@ -7,8 +7,8 @@ packages:
   - steam # Steam gaming platform
   - name: com.heroicgameslauncher.hgl # Heroic Games launcher
     type: flatpak
-  # - name: com.hypixel.HytaleLauncher
-  #   type: flatpak
+  - name: com.hypixel.HytaleLauncher
+    type: flatpak
   # - name: org.prismlauncher.PrismLauncher
   #   type: flatpak
   # - name: org.vinegarhq.Sober
