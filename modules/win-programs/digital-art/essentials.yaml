@@ -6,9 +6,10 @@ description: Essential/must-have packages for digital art
 # List of packages in this module
 packages:
   - uxplay-git
+  - opentabletdriver
 
 # Modules that conflict with this one
 conflicts: []
 
 # Script to run after installing packages (optional)
-post_install_hook: ""
+post_install_hook: scripts/setup-tourbox-linux.sh
