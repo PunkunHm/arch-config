@@ -11,3 +11,4 @@ hooks_behavior: # or "always", "skip", "once" (default)
 package_files:
   - sunshine.yaml
   - gaming-packages.yaml
+  - optimization.yaml
