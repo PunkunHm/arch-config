@@ -28,7 +28,6 @@ local packages = {
 
     -- dcli dependencies (uncomment as needed)
     "yay", -- AUR helper
-    --
     "flatpak",
     -- "flatpak:com.github.tchx84.Flatseal",
     -- "flatpak:io.github.flattool.Warehouse",
