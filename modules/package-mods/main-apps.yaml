@@ -16,8 +16,7 @@ packages:
   - cliphist # Clipboard history manager
 
   # Messaging
-  # - vesktop # Discord client
-  - discord
+  - vesktop # Discord client
 
   # Web browsers
   - webapp-manager
