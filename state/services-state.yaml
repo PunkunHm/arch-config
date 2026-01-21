@@ -1,4 +1,4 @@
-last_updated: 2026-01-20T11:44:08.120487475Z
+last_updated: 2026-01-21T01:16:19.165777169Z
 enabled_services:
 - NetworkManager
 - NetworkManager-dispatcher
@@ -6,7 +6,6 @@ enabled_services:
 - avahi-daemon
 - bluetooth
 - containerd
-- docker
 - earlyoom
 - firewalld
 - getty@
