@@ -1,0 +1,11 @@
+# Gaming packages and tools
+# Everything needed for gaming on Linux
+
+description: Optimization packages for Linux in general
+
+packages:
+  - earlyoom
+  - zram-generator
+
+conflicts: []
+post_install_hook: ""
