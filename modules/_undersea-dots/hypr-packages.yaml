@@ -6,6 +6,10 @@ description: Hyprland Wayland compositor
 
 packages:
   - hyprland # Main compositor
+  - hypridle
+  - hyprlock
+  - hyprsunset
+  - uwsm
   - xdg-desktop-portal-hyprland # Desktop portal
   - wl-clipboard # Clipboard utilities
   - grim # Screenshot tool

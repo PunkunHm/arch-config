@@ -12,7 +12,10 @@ packages:
   - gtk4 # GTK 4 libraries
   - qt5-base
   - qt6-base
-  - bibata-cursor-theme-bin # Bibata Modern Ice cursor theme
   - ttf-jetbrains-mono-nerd
+  - noto-fonts
+  - noto-fonts-cjk
+  - noto-fonts-emoji
+  - noto-fonts-extra
 # Conflicts with other window managers
 conflicts: []

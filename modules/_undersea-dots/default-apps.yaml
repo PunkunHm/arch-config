@@ -6,10 +6,14 @@ description: Hyprland Wayland compositor
 
 packages:
   - nemo
+  - nemo-compare
+  - nemo-fileroller
+  - nemo-preview
   - kitty
   - fastfetch
   - zen-browser-bin
   - zed
   - fish
+  # - fresh-editor-bin
 # Conflicts with other window managers
 conflicts: []

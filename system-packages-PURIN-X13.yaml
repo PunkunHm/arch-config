@@ -16,8 +16,6 @@ packages:
   - btop
   - btrfs-progs
   - cantarell-fonts
-  - name: com.hypixel.HytaleLauncher
-    type: flatpak
   - cryptsetup
   - device-mapper
   - diffutils
@@ -28,7 +26,6 @@ packages:
   - dracut
   - duf
   - e2fsprogs
-  - earlyoom
   - efibootmgr
   - efitools
   - endeavouros-branding
@@ -48,7 +45,6 @@ packages:
   - ffmpegthumbnailer
   - firejail
   - firewalld
-  - flatpak
   - git-filter-repo
   - greetd
   - grub
@@ -56,9 +52,6 @@ packages:
   - hdparm
   - hwdetect
   - hwinfo
-  - hypridle
-  - hyprlock
-  - hyprsunset
   - inetutils
   - inxi
   - iptables-nft
@@ -90,17 +83,10 @@ packages:
   - mtools
   - nano
   - nano-syntax-highlighting
-  - nemo-compare
-  - nemo-fileroller
-  - nemo-preview
   - networkmanager-openconnect
   - networkmanager-openvpn
   - nfs-utils
   - nilfs-utils
-  - noto-fonts
-  - noto-fonts-cjk
-  - noto-fonts-emoji
-  - noto-fonts-extra
   - nss-mdns
   - ntfs-3g
   - ntp
@@ -110,7 +96,6 @@ packages:
   - nvidia-settings
   - nvidia-utils
   - openssh
-  - opentabletdriver
   - name: org.freedesktop.Platform.GL.default
     type: flatpak
   - name: org.freedesktop.Platform.GL.default
@@ -160,9 +145,6 @@ packages:
   - smartmontools
   - sof-firmware
   - songrec
-  - spicetify-cli
-  - spicetify-themes-git
-  - spotify-launcher
   - sudo
   - sysfsutils
   - systemd-sysvcompat
@@ -179,7 +161,6 @@ packages:
   - upower
   - usb_modeswitch
   - usbutils
-  - uwsm
   - welcome
   - wev
   - wget
@@ -198,7 +179,6 @@ packages:
   - xorg-xinput
   - xorg-xrandr
   - yay
-  - zram-generator
 exclude: []
 conflicts: []
 pre_install_hook: null
