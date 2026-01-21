@@ -4,6 +4,9 @@ return {
     import = {},
 
     enabled_modules = {
+        "base",
+        "declared-packages",
+        -- "hardware",
         "_undersea-dots",
         "asus/asus",
         "win-programs/digital-art",
@@ -11,6 +14,7 @@ return {
         "gaming/controller-support",
         "package-mods/main-apps",
         "package-mods/content-creation",
+        "system-packages-PURIN-X13/packages",
     },
 
     packages = {},
@@ -19,8 +23,8 @@ return {
 
     flatpak_scope = "user",
     auto_prune = false,
-    module_processing = "parallel",
-    strict_package_order = false,
+    module_processing = "sequential",
+    strict_package_order = true,
 
     config_backups = {
         enabled = true,
