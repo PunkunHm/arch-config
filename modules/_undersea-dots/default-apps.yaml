@@ -8,7 +8,7 @@ packages:
   - nemo
   - nemo-compare
   - nemo-fileroller
-  - nemo-preview
+#  - nemo-preview
   - kitty
   - fastfetch
   - zen-browser-bin
