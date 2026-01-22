@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-01-22T13:35:51.742100185+00:00",
+  "timestamp_display": "2026-01-22 13:35",
+  "hostname": "PURIN-X13-CACHY",
+  "active_host_file": "PURIN-X13-CACHY.yaml",
+  "enabled_modules": [
+    "system-packages-PURIN-X13-CACHY/packages2",
+    "_undersea-dots"
+  ],
+  "backup_type": "auto-sync",
+  "dcli_version": "0.2.0",
+  "package_count": 181,
+  "validation_passed": true
+}
