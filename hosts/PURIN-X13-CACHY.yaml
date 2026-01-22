@@ -1,0 +1,10 @@
+# Host-specific packages for PURIN-X13-CACHY
+# CachyOS General use laptop
+
+description: Packages specific to PURIN-X13-CACHY
+
+# Packages to install only on this host
+packages: []
+
+# Packages to exclude from base or modules on this host
+exclude: []
