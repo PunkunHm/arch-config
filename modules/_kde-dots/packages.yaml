@@ -1,7 +1,6 @@
 description: flatpak dependencies and left over packages
 packages:
   - cachy-update
-  - cachyos-fish-config
   - name: org.freedesktop.Platform.GL.default
     type: flatpak
   - name: org.freedesktop.Platform.GL.default
