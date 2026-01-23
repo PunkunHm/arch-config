@@ -23,7 +23,7 @@ return {
     packages = packages,
     conflicts = { "minimal" },
 
-    services = {
-        enabled = { "gamemode.service" },
-    },
+    -- services = {
+    --     enabled = { "gamemode.service" },
+    -- },
 }

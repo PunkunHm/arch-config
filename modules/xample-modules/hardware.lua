@@ -42,15 +42,15 @@ end
 -- LAPTOP PACKAGES
 -- ═══════════════════════════════════════════════════════════════════
 
--- if dcli.hardware.is_laptop() then
---     dcli.log.info("Laptop detected - adding power management")
---     table.insert(description_parts, "Laptop")
+if dcli.hardware.is_laptop() then
+    dcli.log.info("Laptop detected - adding power management")
+    table.insert(description_parts, "Laptop")
 
---     table.insert(packages, "tlp")
---     table.insert(packages, "tlp-rdw")
---     table.insert(packages, "powertop")
---     table.insert(packages, "acpi")
--- end
+    table.insert(packages, "tlp")
+    table.insert(packages, "tlp-rdw")
+    table.insert(packages, "powertop")
+    table.insert(packages, "acpi")
+end
 
 -- Build description
 local description = "Hardware drivers"
@@ -59,14 +59,14 @@ if #description_parts > 0 then
 end
 
 -- Services for laptop
--- local services = { enabled = {}, disabled = {} }
--- if dcli.hardware.is_laptop() then
---     table.insert(services.enabled, "tlp.service")
---     table.insert(services.disabled, "power-profiles-daemon.service")
--- end
+local services = { enabled = {}, disabled = {} }
+if dcli.hardware.is_laptop() then
+    table.insert(services.enabled, "tlp.service")
+    table.insert(services.disabled, "power-profiles-daemon.service")
+end
 
 return {
     description = description,
     packages = packages,
-    -- services = services,
+    services = services,
 }
