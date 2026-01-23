@@ -1,0 +1,10 @@
+description: Music-related applications - to isolate from quickshell project
+
+packages:
+  - spicetify-cli
+  - spicetify-themes-git
+  - spotify-launcher
+
+conflicts: []
+post_install_hook: ""
+# install hook for spicetify theming
