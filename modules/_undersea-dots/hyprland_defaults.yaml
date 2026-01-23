@@ -1,4 +1,4 @@
-description: Packages installed manually on the cachy system (auto-synced by dcli)
+description: Packages installed manually on cachyos-hyprland system (auto-synced by dcli)
 packages:
   - accountsservice
   - alacritty
@@ -18,7 +18,6 @@ packages:
   - btop
   - btrfs-assistant
   - btrfs-progs
-  - cachyos-fish-config
   - cachyos-hello
   - cachyos-hooks
   - cachyos-kernel-manager
@@ -137,7 +136,6 @@ packages:
   - rsync
   - rtkit
   - s-nail
-  - sbctl
   - sddm
   - sg3_utils
   - smartmontools
@@ -178,7 +176,6 @@ packages:
   - xorg-xkill
   - xorg-xrandr
   - xorg-xwayland
-  - yay
 exclude: []
 conflicts: []
 pre_install_hook: null

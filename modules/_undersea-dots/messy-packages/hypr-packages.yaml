@@ -11,7 +11,9 @@ packages:
   - hyprsunset
   - uwsm
   - xdg-desktop-portal-hyprland # Desktop portal
-  - wl-clipboard # Clipboard utilities
+  # Clipboard utilities
+  - wl-clipboard # Wayland clipboard utilities
+  - cliphist # Clipboard history manager
   - grim # Screenshot tool
   - slurp # Region selector
   - hyprshot # Temporary solution

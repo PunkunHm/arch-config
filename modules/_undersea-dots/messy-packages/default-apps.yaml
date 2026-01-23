@@ -8,12 +8,7 @@ packages:
   - nemo
   - nemo-compare
   - nemo-fileroller
-#  - nemo-preview
-  - kitty
-  - fastfetch
-  - zen-browser-bin
-  - zed
-  - fish
+  - nemo-preview
   # - fresh-editor-bin
 # Conflicts with other window managers
 conflicts: []
