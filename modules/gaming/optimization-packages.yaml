@@ -1,11 +1,14 @@
 # Gaming packages and tools
 # Everything needed for gaming on Linux
 
-description: Optimization packages for Linux in general
+description: Optimization packages for Linux gaming in general
 
 packages:
   - earlyoom
   - zram-generator
+  - gamemode
 
 conflicts: []
 post_install_hook: ""
+# hook for these services
+# check cachy wiki
