@@ -16,3 +16,5 @@ conflicts: []
 
 # Script to run after installing packages (optional)
 post_install_hook: ""
+
+# Creative category needs revamp as a whole
