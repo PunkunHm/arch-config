@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-01-23T16:07:39.455157635+00:00",
+  "timestamp_display": "2026-01-23 16:07",
+  "hostname": "PURIN-X13-CACHY",
+  "active_host_file": "PURIN-X13-CACHY.yaml",
+  "enabled_modules": [
+    "base",
+    "_kde-dots",
+    "drivers/asus",
+    "general/basic-packages",
+    "general/music",
+    "gaming/gaming-packages",
+    "gaming/optimization-packages"
+  ],
+  "backup_type": "auto-sync",
+  "dcli_version": "0.2.0",
+  "package_count": 5,
+  "validation_passed": true
+}
