@@ -11,3 +11,6 @@ hooks_behavior: ask # or "always", "skip", "once" (default)
 
 # Optional: Explicit list of package files to load (empty = auto-discover)
 package_files:
+  - cachy-kde-defaults.yaml
+  - packages.yaml
+  - hyprland-extras.yaml
