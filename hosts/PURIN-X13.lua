@@ -5,8 +5,6 @@ return {
 
     enabled_modules = {
         "base",
-        "declared-packages",
-        -- "hardware",
         "_undersea-dots",
         "asus/asus",
         "win-programs/digital-art",
@@ -15,6 +13,7 @@ return {
         "package-mods/main-apps",
         "package-mods/content-creation",
         "system-packages-PURIN-X13/packages",
+        "declared-packages",
     },
 
     packages = {},
