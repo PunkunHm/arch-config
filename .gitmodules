@@ -2,5 +2,5 @@
 	path = modules/_undersea-dots/dotfiles
 	url = https://github.com/PunkunHm/undersea-dots
 [submodule "dotfiles"]
-	path = modules/_kde-dots/undersea-dots-kde
+	path = modules/_kde-dots/dotfiles/
 	url = https://github.com/PunkunHm/undersea-dots-kde.git
