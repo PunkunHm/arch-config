@@ -1,4 +1,12 @@
-# System packages merged from host (auto-generated, host-specific)
-system-packages-*.yaml
-config.lua
+# Host-specific configuration (each machine has its own)
 config.yaml
+config.lua
+
+# Auto-generated state files
+system-packages.yaml
+state/installed.yaml
+state/hooks-executed.yaml
+modules/declared-packages.yaml
+
+
+system-packages-*.yaml
