@@ -5,7 +5,8 @@ description: Main applications and utilities for daily use
 
 packages:
   # Messaging
-  - vesktop # Discord client
+  # - vesktop # Discord client
+  - discord
 
   # Web browsers
   - zen-browser-bin # Zen browser (AUR)
@@ -18,5 +19,7 @@ packages:
   # Development
   - zed # Zed code editor (AUR)
 
+  # Misc
+  - amdgpu_top
 conflicts: []
 post_install_hook: ""

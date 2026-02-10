@@ -14,7 +14,7 @@ packages:
 exclude: []
 additional_packages: []
 flatpak_scope: system
-auto_prune: false
+auto_prune: true
 module_processing: parallel
 strict_package_order: true
 config_backups:
@@ -32,7 +32,6 @@ services:
     - NetworkManager
     - NetworkManager-dispatcher
     - NetworkManager-wait-online
-    - ananicy-cpp
     - avahi-daemon
     - bluetooth
     - getty@
@@ -41,7 +40,9 @@ services:
     - nvidia-resume
     - nvidia-suspend
     - ufw
-  disabled: []
+  disabled:
+    - ananicy-cpp
+    - nvidia-powerd
 enabled_service_profiles: []
 update_hooks:
   pre_update: null
