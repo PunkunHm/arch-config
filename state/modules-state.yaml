@@ -1,12 +1,18 @@
-last_updated: 2026-01-21T17:03:52.032092880Z
+last_updated: 2026-01-24T00:36:16.931078839Z
 completed_modules:
 - base
-- gaming/controller-support
-- win-programs/digital-art
 - system-packages-PURIN-X13/packages
-- package-mods/content-creation
-- _undersea-dots
-- asus/asus
-- gaming
-- package-mods/main-apps
 - declared-packages
+- _kde-dots
+- package-mods/main-apps
+- win-programs/digital-art
+- gaming/controller-support
+- _undersea-dots
+- package-mods/content-creation
+- asus/asus
+- general/music
+- gaming/optimization-packages
+- drivers/asus
+- general/basic-packages
+- gaming/gaming-packages
+- gaming
