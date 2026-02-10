@@ -55,15 +55,26 @@ KERNEL=="hidraw*", ATTRS{idVendor}=="045e", ATTRS{idProduct}=="028e", MODE="0666
 # ============================================================
 
 # Flydigi Vader 4 Pro Controller (dinput mode)
-KERNEL=="hidraw*", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", MODE="0666", TAG+="uaccess"
-SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_INPUT_JOYSTICK}=="1", TAG+="steam-controller"
-SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_INPUT_JOYSTICK}=="1", ENV{STEAM_INPUT_ENABLE}="1"
-SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_INPUT_JOYSTICK}=="1", RUN+="/usr/bin/chmod 666 /dev/input/event%n"
+# KERNEL=="hidraw*", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", MODE="0666", TAG+="uaccess"
+# SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_INPUT_JOYSTICK}=="1", TAG+="steam-controller"
+# SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_INPUT_JOYSTICK}=="1", ENV{STEAM_INPUT_ENABLE}="1"
+# SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_INPUT_JOYSTICK}=="1", RUN+="/usr/bin/chmod 666 /dev/input/event%n"
 
-# Flydigi Vader 4 Pro (D-Input) - NUCLEAR DELETE
-# KERNEL=="hidraw*", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", MODE="0660", TAG+="uaccess"
-#  DELETE the event interface (Kills Double Input & Capture Button)
-# KERNEL=="event*", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", RUN+="/usr/bin/rm /dev/input/%k"
+# SUBSYSTEM=="input", ENV{ID_VENDOR_ID}=="04b4", ENV{ID_MODEL_ID}=="2412", ENV{ID_USB_INTERFACE_NUM}=="00", ENV{LIBINPUT_IGNORE_DEVICE}="1", ENV{ID_INPUT}="", ENV{ID_INPUT_JOYSTICK}=""
+# 1. HIDRAW ACCESS (Critical for Steam Input)
+# This allows Steam to talk directly to the hardware.
+KERNEL=="hidraw*", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", MODE="0660", TAG+="uaccess"
+
+# 2. INPUT DEVICE PERMISSIONS
+# Sets proper permissions for the input device so the rules below can modify it.
+# We replace your 'RUN+=chmod' with 'TAG+=uaccess' which is the safe, modern equivalent.
+SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", TAG+="uaccess", TAG+="steam-controller", ENV{STEAM_INPUT_ENABLE}="1"
+
+# 3. DOUBLE INPUT FIX (The "Nuke" Rule)
+# This clears the input flags for Interface 00.
+# Since Steam uses the 'hidraw' rule (Rule #1), Steam will still work,
+# but the OS/Desktop will ignore this interface entirely, solving the double input.
+SUBSYSTEM=="input", ATTRS{idVendor}=="04b4", ATTRS{idProduct}=="2412", ENV{ID_USB_INTERFACE_NUM}=="00", ENV{LIBINPUT_IGNORE_DEVICE}="1", ENV{ID_INPUT}="", ENV{ID_INPUT_JOYSTICK}=""
 
 # 8BitDo Ultimate 2 2.4GHz/Dongle and Bluetooth
 KERNEL=="hidraw*", ATTRS{idProduct}=="6012", ATTRS{idVendor}=="2dc8", MODE="0660", TAG+="uaccess"

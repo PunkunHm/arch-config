@@ -7,6 +7,13 @@ packages:
   - earlyoom
   - zram-generator
   - gamemode
+  - auto-cpufreq
+  - nvidia-prime # Script-alias for PRIME offload
+  # prime-run %command%
+  - cachyos-gaming-meta #CachyOS Essential Packages
+  # PROTON_USE_NTSYNC=1
+  # Launch option <env variables> <wrappers> %command% <application arguments>
+  # https://wiki.cachyos.org/configuration/gaming/#environment-variables
 
 conflicts: []
 post_install_hook: ""
