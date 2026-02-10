@@ -5,6 +5,14 @@ packages:
   - spicetify-themes-git
   - spotify-launcher
 
+  # Install EasyEffects
+  - easyeffects
+  # Install additional plugins for more effects
+  - lsp-plugins-lv2
+  - zam-plugins
+  - calf
+  - mda.lv2
+# https://wiki.cachyos.org/configuration/general_system_tweaks/#enhancing-laptop-speaker-sound
 conflicts: []
 post_install_hook: ""
 # install hook for spicetify theming

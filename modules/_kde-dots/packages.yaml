@@ -17,6 +17,19 @@ packages:
     type: flatpak
   - name: org.kde.Platform
     type: flatpak
+  # CachyOS wiki
+  - libdbusmenu-glib
+  - appmenu-gtk-module # global menu bar
+  - tealdeer # tldr commands util
+  - appimagelauncher # Integrating AppImage file
+  - bpftune-git
+  - profile-sync-daemon
+  # An official sddm replacement with plasma-login update from CachyOS
+  - plasma-login-manager
+  # Missing package
+  - partitionmanager
+  - plasma-keyboard
+  - kio-gdrive
 exclude: []
 conflicts: []
 pre_install_hook: null

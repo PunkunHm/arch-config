@@ -155,7 +155,6 @@ packages:
   - upower
   - usb_modeswitch
   - usbutils
-  - vi
   - vim
   - vlc-plugins-all
   - vulkan-radeon
