@@ -10,6 +10,8 @@ enabled_modules:
   - gaming/gaming-packages
   - gaming/optimization-packages
   - declared-packages
+  - creative/essentials
+  - creative/streaming
 packages:
 exclude: []
 additional_packages: []
