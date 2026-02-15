@@ -1,12 +1,12 @@
-last_updated: 2026-02-04T03:59:16.303394710Z
+last_updated: 2026-02-15T12:28:54.409726433Z
 scope: system
 apps:
-  pdf_viewer: zen
-  text_editor: dev.zed.Zed
-  audio_player: mpv
+  file_manager: org.kde.dolphin
   image_viewer: org.kde.gwenview
   terminal: kitty
-  file_manager: org.kde.dolphin
+  pdf_viewer: zen
+  audio_player: mpv
+  text_editor: dev.zed.Zed
   browser: zen
   video_player: org.kde.haruna
 custom_mime_types: {}
