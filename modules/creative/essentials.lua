@@ -4,7 +4,10 @@
 local packages = {
     "flatpak:com.usebottles.bottles",
     "winboat-bin", -- for windows apps including
+    "docker",      -- winboat dependency
+    "docker-compose",
     "kdotool",     -- tuxbox dependency
+    "python-pip",
 }
 
 return {
