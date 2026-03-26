@@ -3,16 +3,16 @@
 
 local packages = {
     -- Launchers
-    "steam",                                   -- Steam gaming platform
+    "steam",                         -- Steam gaming platform
     -- "flatpak:com.heroicgameslauncher.hgl",     -- General games launcher
-    "flatpak:org.prismlauncher.PrismLauncher", -- Minecraft launcher
+    "prismlauncher",                 -- Minecraft launcher
     -- "flatpak:com.hypixel.HytaleLauncher",      -- Hytale lunacher
-    "flatpak:org.vinegarhq.Sober",             -- Roblox launcher
+    "flatpak:org.vinegarhq.Sober",   -- Roblox launcher
     -- Utilities
-    "sunshine",                                -- Remote streaming
-    "gamescope",                               -- Gaming compositor
-    "mangohud",                                -- Performance overlay
-    "flatpak:com.vysp3r.ProtonPlus",           -- Proton version manager
+    "sunshine",                      -- Remote streaming
+    "gamescope",                     -- Gaming compositor
+    "mangohud",                      -- Performance overlay
+    "flatpak:com.vysp3r.ProtonPlus", -- Proton version manager
 }
 
 return {
