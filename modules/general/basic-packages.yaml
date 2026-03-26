@@ -11,7 +11,7 @@ packages:
   # Web browsers
   - zen-browser-bin # Zen browser (AUR)
   - webapp-manager
-  # - chromium # for webapp-manager
+  - brave-bin # for webapp-manager
 
   # Productivity
   - obsidian # Obsidian notes app (AUR)
@@ -21,5 +21,6 @@ packages:
 
   # Misc
   - amdgpu_top
+  - debtap # Converting .deb to arch compatible package
 conflicts: []
 post_install_hook: ""
