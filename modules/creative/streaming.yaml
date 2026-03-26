@@ -11,7 +11,8 @@ packages:
   # - flatpak:com.obsproject.Studio.Plugin.AitumMultistream
   - name: com.obsproject.Studio.Plugin.CompositeBlur
     type: flatpak
-  - uxplay # airplay streaming server
+  - uxplay # airplay screen miror server
+  - scrcpy # android screen mirror server
 # Modules that conflict with this one
 conflicts: []
 
