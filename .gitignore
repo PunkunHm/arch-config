@@ -7,6 +7,6 @@ system-packages.yaml
 state/installed.yaml
 state/hooks-executed.yaml
 modules/declared-packages.yaml
-
+modules/system-packages-*
 
 system-packages-*.yaml
