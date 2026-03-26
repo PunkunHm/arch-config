@@ -12,7 +12,7 @@ enabled_modules:
   - declared-packages
   - creative/essentials
   - creative/streaming
-packages:
+packages: []
 exclude: []
 additional_packages: []
 flatpak_scope: system
@@ -36,21 +36,27 @@ services:
     - NetworkManager-wait-online
     - avahi-daemon
     - bluetooth
+    - bpftune
     - getty@
     - limine-snapper-sync
     - nvidia-hibernate
     - nvidia-resume
     - nvidia-suspend
+    - plasmalogin
+    - plugin_loader
+    - power-profiles-daemon
     - ufw
   disabled:
     - ananicy-cpp
     - nvidia-powerd
+  scope: system
 enabled_service_profiles: []
 update_hooks:
   pre_update: null
   post_update: null
   behavior: ask
   devel: false
+  run_as_user: false
 default_apps:
   scope: system
   browser: zen
@@ -64,3 +70,4 @@ default_apps:
   mime_types: {}
 editor: nano
 aur_helper: yay
+sync_sudo: false
