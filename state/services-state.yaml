@@ -1,15 +1,19 @@
-last_updated: 2026-02-15T12:28:54.409659740Z
+last_updated: 2026-03-02T13:49:16.265731853Z
 enabled_services:
 - NetworkManager
 - NetworkManager-dispatcher
 - NetworkManager-wait-online
 - avahi-daemon
 - bluetooth
+- bpftune
 - getty@
 - limine-snapper-sync
 - nvidia-hibernate
 - nvidia-resume
 - nvidia-suspend
+- plasmalogin
+- plugin_loader
+- power-profiles-daemon
 - ufw
 disabled_services:
 - ananicy-cpp
