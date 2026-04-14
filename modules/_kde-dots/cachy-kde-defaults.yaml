@@ -1,7 +1,6 @@
 description: Packages installed manually on cachyos-kde system (auto-synced by dcli)
 packages:
   - accountsservice
-  - alacritty
   - alsa-firmware
   - alsa-plugins
   - alsa-utils
