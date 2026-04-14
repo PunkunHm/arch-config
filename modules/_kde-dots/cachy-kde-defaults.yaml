@@ -79,7 +79,7 @@ packages:
   - hwdetect
   - hwinfo
   - inetutils
-  - iptables-nft
+  - iptables
   - iwd
   - jfsutils
   - kate
