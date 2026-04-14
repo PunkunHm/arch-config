@@ -20,6 +20,7 @@ packages:
   - appimagelauncher # Integrating AppImage file
   - bpftune-git
   - profile-sync-daemon
+  - xdg-terminal-exec # Changing cachy-update to other terminals
   # An official sddm replacement with plasma-login update from CachyOS
   - plasma-login-manager
   - ex-vi-compat
