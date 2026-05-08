@@ -4,6 +4,7 @@
 local packages = {
     -- Launchers
     "steam",                         -- Steam gaming platform
+    "yt-dlp",                        -- Steam decky ThemeDeck dependency
     -- "flatpak:com.heroicgameslauncher.hgl",     -- General games launcher
     "prismlauncher",                 -- Minecraft launcher
     -- "flatpak:com.hypixel.HytaleLauncher",      -- Hytale lunacher
